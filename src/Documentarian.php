@@ -79,7 +79,7 @@ class Documentarian
         $frontmatter = $document->getYAML();
         $html = $document->getContent();
 
-        $renderer = new BladeRenderer([__DIR__ . '/../resources/views'], ['cache_path' => $source_dir . '/_tmp']);
+        $renderer = new BladeRenderer([$source_dir . '/views'], ['cache_path' => $source_dir . '/_tmp']);
 
         // Parse and include optional include markdown files
         if (isset($frontmatter['includes'])) {
