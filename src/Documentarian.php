@@ -1,6 +1,6 @@
 <?php
 
-namespace Mpociot\Documentarian;
+namespace Anok\Documentarian;
 
 use Illuminate\Support\Arr;
 use Mni\FrontYAML\Parser;
